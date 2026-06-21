@@ -18,27 +18,21 @@ Lakshya Current Affairs & PCS Academy </h1>
         <h3 className="font-bold text-xl">
           Daily Current Affairs
         </h3>
-        <p>
-          Latest daily updates for competitive exams.
-        </p>
+        <p>Latest daily updates for competitive exams.</p>
       </div>
 
       <div className="bg-white p-6 rounded-xl shadow">
         <h3 className="font-bold text-xl">
           Weekly Current Affairs
         </h3>
-        <p>
-          Weekly revision and important events.
-        </p>
+        <p>Weekly revision and important events.</p>
       </div>
 
       <div className="bg-white p-6 rounded-xl shadow">
         <h3 className="font-bold text-xl">
           Monthly Current Affairs
         </h3>
-        <p>
-          Monthly PDF and exam-focused notes.
-        </p>
+        <p>Monthly PDF and exam-focused notes.</p>
       </div>
     </div>
   </section>
@@ -77,19 +71,6 @@ Lakshya Current Affairs & PCS Academy </h1>
       <div className="bg-white p-6 rounded-xl shadow">
         Full Mock Tests
       </div>
-    </div>
-  </section>
-
-  <section className="bg-blue-100 p-8">
-    <h2 className="text-3xl font-bold mb-6">
-      Resources
-    </h2>
-
-    <div className="grid md:grid-cols-4 gap-4">
-      <div className="bg-white p-4 rounded">Books</div>
-      <div className="bg-white p-4 rounded">PDF Store</div>
-      <div className="bg-white p-4 rounded">YouTube</div>
-      <div className="bg-white p-4 rounded">Blog</div>
     </div>
   </section>
 
