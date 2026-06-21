@@ -1,11 +1,7 @@
 
-These are **not valid TypeScript/React code** and are causing the build to fail.
+Delete **everything** inside `app/page.tsx` and replace it with this entire file:
 
-### Easiest Fix
-
-Delete the file contents completely and replace with this exact code:
-
-:::writing{variant="document" id="64182"}
+:::writing{variant="document" id="75391"}
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50">
@@ -20,23 +16,81 @@ export default function Home() {
       </section>
 
       <section className="p-8">
-        <h2 className="text-3xl font-bold mb-6">Current Affairs</h2>
+        <h2 className="text-3xl font-bold mb-6">
+          Current Affairs
+        </h2>
 
         <div className="grid md:grid-cols-3 gap-4">
           <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="font-bold text-xl">Daily Current Affairs</h3>
+            <h3 className="font-bold text-xl">
+              Daily Current Affairs
+            </h3>
             <p>Latest daily updates for competitive exams.</p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="font-bold text-xl">Weekly Current Affairs</h3>
+            <h3 className="font-bold text-xl">
+              Weekly Current Affairs
+            </h3>
             <p>Weekly revision and important events.</p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="font-bold text-xl">Monthly Current Affairs</h3>
+            <h3 className="font-bold text-xl">
+              Monthly Current Affairs
+            </h3>
             <p>Monthly PDF and exam-focused notes.</p>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white p-8">
+        <h2 className="text-3xl font-bold mb-6">
+          Popular Exams
+        </h2>
+
+        <div className="grid md:grid-cols-4 gap-4">
+          <div className="p-4 border rounded">UPPSC PCS</div>
+          <div className="p-4 border rounded">UPSSSC PET</div>
+          <div className="p-4 border rounded">Lekhpal</div>
+          <div className="p-4 border rounded">Health Education Officer</div>
+          <div className="p-4 border rounded">RO/ARO</div>
+          <div className="p-4 border rounded">Junior Assistant</div>
+          <div className="p-4 border rounded">UGC NET Psychology</div>
+          <div className="p-4 border rounded">Mock Tests</div>
+        </div>
+      </section>
+
+      <section className="p-8">
+        <h2 className="text-3xl font-bold mb-6">
+          MCQ Zone
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="bg-white p-6 rounded-xl shadow">
+            Daily MCQs
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow">
+            Subject Wise MCQs
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow">
+            Full Mock Tests
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-blue-100 p-8">
+        <h2 className="text-3xl font-bold mb-6">
+          Resources
+        </h2>
+
+        <div className="grid md:grid-cols-4 gap-4">
+          <div className="bg-white p-4 rounded">Books</div>
+          <div className="bg-white p-4 rounded">PDF Store</div>
+          <div className="bg-white p-4 rounded">YouTube</div>
+          <div className="bg-white p-4 rounded">Blog</div>
         </div>
       </section>
 
@@ -48,14 +102,18 @@ export default function Home() {
 }
 :::
 
-### Then
+### Important
 
-1. Click **Commit changes**
-2. Commit directly to **main**
-3. Wait 1 minute
-4. Open Vercel → Deployments
+1. Select ALL text in `page.tsx`
+2. Delete it
+3. Paste ONLY the code above
+4. Click **Commit changes**
+5. Click **Commit changes** again
+6. Wait 1 minute
+7. Refresh Vercel
 
-Send me the **new build log** or tell me if it says:
+Then send me:
+- Screenshot of Vercel status, or
+- New build log
 
-```text id="u6a4sa"
-Ready
+This file contains **no backticks**, **no imports**, and should compile successfully. 🚀
