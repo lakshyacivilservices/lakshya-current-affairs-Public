@@ -1,177 +1,210 @@
-export default function Home() {
-  return (
-    <main
-      style={{
-        minHeight: "100vh",
-        background: "#0a0a0a",
-        color: "#ffffff",
-        fontFamily: "Arial, sans-serif",
-        padding: "40px",
-      }}
-    >
-      <div style={{ textAlign: "center", marginBottom: "50px" }}>
-        <h1
-          style={{
-            fontSize: "3rem",
-            marginBottom: "10px",
-            color: "#22d3ee",
-          }}
-        >
-          🚀 Lakshya Current Affairs & PCS Academy
-        </h1>
+const globalAcademies = {
+  ugcNet: [
+    "Paper 1",
+    "Economics",
+    "Political Science",
+    "Philosophy",
+    "Psychology",
+    "Sociology",
+    "History",
+    "Anthropology",
+    "Commerce",
+    "Education",
+    "Social Work",
+    "Management",
+    "Public Administration",
+    "Geography",
+    "Law",
+    "Library Science",
+    "Mass Communication",
+    "Computer Science",
+    "Environmental Science",
+    "Statistics",
+    "Yoga",
+    "Disaster Management",
+    "Forestry",
+    "Indian Knowledge System"
+  ],
 
-        <p
-          style={{
-            fontSize: "1.2rem",
-            color: "#d1d5db",
-          }}
-        >
-          AI Powered Learning Platform | हिंदी + English
-        </p>
-      </div>
+  artificialIntelligence: [
+    "Artificial Intelligence",
+    "Generative AI",
+    "Agentic AI",
+    "AI Agents",
+    "Prompt Engineering",
+    "ChatGPT",
+    "Claude AI",
+    "Gemini AI",
+    "Copilot",
+    "Large Language Models",
+    "Multimodal AI",
+    "AI Ethics",
+    "Responsible AI",
+    "AI Governance",
+    "Explainable AI"
+  ],
 
-      <section
-        style={{
-          background: "#111827",
-          padding: "25px",
-          borderRadius: "15px",
-          marginBottom: "30px",
-        }}
-      >
-        <h2>📚 Current Affairs Dashboard</h2>
+  machineLearning: [
+    "Machine Learning",
+    "Supervised Learning",
+    "Unsupervised Learning",
+    "Reinforcement Learning",
+    "Deep Learning",
+    "Neural Networks",
+    "Transfer Learning",
+    "MLOps",
+    "AutoML",
+    "Model Deployment",
+    "Feature Engineering",
+    "Federated Learning"
+  ],
 
-        <ul>
-          <li>📰 Daily Current Affairs</li>
-          <li>📅 Weekly Current Affairs</li>
-          <li>📖 Monthly Current Affairs</li>
-          <li>🎯 Exam Focused Notes</li>
-        </ul>
-      </section>
+  dataScience: [
+    "Data Science",
+    "Data Analytics",
+    "Business Analytics",
+    "Research Analytics",
+    "Predictive Analytics",
+    "Healthcare Analytics",
+    "Marketing Analytics",
+    "Financial Analytics",
+    "Sports Analytics",
+    "Decision Science"
+  ],
 
-      <section
-        style={{
-          background: "#111827",
-          padding: "25px",
-          borderRadius: "15px",
-          marginBottom: "30px",
-        }}
-      >
-        <h2>🎯 Popular Exams</h2>
+  statistics: [
+    "Statistics",
+    "Probability",
+    "Linear Algebra",
+    "Calculus",
+    "Optimization",
+    "Bayesian Statistics",
+    "Experimental Design",
+    "A/B Testing",
+    "Time Series Analysis",
+    "Mathematics for AI"
+  ],
 
-        <ul>
-          <li>UPPSC PCS</li>
-          <li>UPSSSC PET</li>
-          <li>Lekhpal</li>
-          <li>RO/ARO</li>
-          <li>Health Education Officer</li>
-          <li>UGC NET Psychology</li>
-        </ul>
-      </section>
+  dataEngineering: [
+    "Data Engineering",
+    "ETL",
+    "ELT",
+    "Data Warehousing",
+    "Data Lakes",
+    "Big Data",
+    "Apache Spark",
+    "Apache Kafka",
+    "Apache Airflow",
+    "Snowflake"
+  ],
 
-      <section
-        style={{
-          background: "#111827",
-          padding: "25px",
-          borderRadius: "15px",
-          marginBottom: "30px",
-        }}
-      >
-        <h2>💰 Resources</h2>
+  visualization: [
+    "Power BI",
+    "Tableau",
+    "Excel Analytics",
+    "Looker Studio",
+    "Dashboard Design",
+    "KPI Reporting",
+    "Data Storytelling"
+  ],
 
-        <ul>
-          <li>
-            <a
-              href="https://palratiraj.gumroad.com/l/qhfrbw"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📄 Premium PDF Store
-            </a>
-          </li>
+  programming: [
+    "Python",
+    "SQL",
+    "R Programming",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Java",
+    "C",
+    "C++",
+    "C#",
+    "Go",
+    "Rust",
+    "MATLAB"
+  ],
 
-          <li>
-            <a
-              href="https://www.amazon.in/dp/B0F91P764L"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📚 Research Methodology Book
-            </a>
-          </li>
+  cloudComputing: [
+    "AWS",
+    "Azure",
+    "Google Cloud",
+    "Cloud Architecture",
+    "Serverless Computing",
+    "Cloud Security",
+    "Cloud DevOps"
+  ],
 
-          <li>
-            <a
-              href="https://www.youtube.com/@LakshyCivilServices"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ▶️ YouTube Channel
-            </a>
-          </li>
+  devOps: [
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "Git",
+    "GitHub",
+    "Linux",
+    "Infrastructure as Code",
+    "DevOps Engineering"
+  ],
 
-          <li>
-            <a
-              href="https://whatsapp.com/channel/0029Vb7vDqq4IBhGjuC9j21p"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📱 WhatsApp Channel
-            </a>
-          </li>
+  cyberSecurity: [
+    "Cyber Security",
+    "Ethical Hacking",
+    "Network Security",
+    "Cloud Security",
+    "Digital Forensics",
+    "Cyber Law",
+    "Penetration Testing"
+  ],
 
-          <li>
-            <a
-              href="https://lakshyacivilservicesacademy.blogspot.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📝 Blogger
-            </a>
-          </li>
+  business: [
+    "MBA",
+    "Finance",
+    "Marketing",
+    "Human Resource Management",
+    "Operations Management",
+    "Project Management",
+    "Product Management",
+    "Digital Marketing",
+    "Stock Market",
+    "Investment Analysis"
+  ],
 
-          <li>
-            <a
-              href="https://www.facebook.com/glam.tec/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              👍 Facebook Page
-            </a>
-          </li>
-        </ul>
-      </section>
+  emergingTech: [
+    "Quantum Computing",
+    "Blockchain",
+    "Web3",
+    "Internet of Things",
+    "AR/VR",
+    "Digital Twins",
+    "Robotics",
+    "Edge AI",
+    "Autonomous Systems"
+  ],
 
-      <section
-        style={{
-          background: "#111827",
-          padding: "25px",
-          borderRadius: "15px",
-          marginBottom: "30px",
-        }}
-      >
-        <h2>🤖 Future AI Features</h2>
+  aiTools: [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Perplexity",
+    "Cursor",
+    "GitHub Copilot",
+    "NotebookLM",
+    "Midjourney",
+    "Runway",
+    "ElevenLabs"
+  ],
 
-        <ul>
-          <li>AI Current Affairs Assistant</li>
-          <li>AI MCQ Generator</li>
-          <li>AI Study Planner</li>
-          <li>Timer Based Mock Tests</li>
-          <li>Correct Answer Green / Wrong Answer Red</li>
-          <li>Jump To Question</li>
-          <li>Student Dashboard</li>
-          <li>Leaderboard</li>
-        </ul>
-      </section>
-
-      <footer
-        style={{
-          textAlign: "center",
-          marginTop: "50px",
-          color: "#9ca3af",
-        }}
-      >
-        © 2026 Lakshya Current Affairs & PCS Academy
-      </footer>
-    </main>
-  );
-}
+  mcqZone: [
+    "AI MCQs",
+    "Machine Learning MCQs",
+    "Data Science MCQs",
+    "Python MCQs",
+    "SQL MCQs",
+    "Statistics MCQs",
+    "Research Methodology MCQs",
+    "UGC NET MCQs",
+    "UPPSC MCQs",
+    "PET MCQs"
+  ]
+};
